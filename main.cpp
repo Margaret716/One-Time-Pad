@@ -10,7 +10,6 @@ std::vector <int> random;
 std::vector <std::string> random_binary;
 std::vector <std::string> sentence_binary;
 std::vector <std::string> sum_result;
-std::map<int, std::string> random_numbers;
 std::map<int, std::string> sentence_numbers;
 std::string file_content;
 std::string key;
