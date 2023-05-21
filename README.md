@@ -1,4 +1,6 @@
 # One Time Pad
+
+ <br />
  
 One-time pad (OTP) is a encryption technique that uses randomly generated keys of the same length as the original message. The key is used only once and should never be reused.
 
@@ -8,7 +10,11 @@ It is important for the key to be truly random and for secure key storage to be 
 
 The main advantage of OTP encryption is that it is theoretically unbreakable, provided that the key is truly random, never reused, and securely stored. However, OTP has practical limitations, such as the need for prior key agreement between the sender and recipient, as well as the requirement for secure key exchange.
 
+<br />
+
 ## Example of OTP Encryption
+
+ <br />
 
 Let's assume we have a message to encrypt: "HELLO" and a randomly generated key of the same length: "QIVRS".
 
