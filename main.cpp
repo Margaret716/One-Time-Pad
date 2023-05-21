@@ -105,47 +105,10 @@ int main()
     key_to_file << key;
     convert_to_binary();
 
-   // FUNKCJA DO WYŚWIETLANIA ZAWARTOŚCI MAP, nawet działa hurray! - chuj
-//    for (auto const& pair : random_numbers)
-//    {
-//        std::cout << pair.second << std::endl;
-//        random_binary.push_back(pair.second);
-//
-//    }
-//
-//
-//    for (auto const& pair : sentence_numbers)
-//    {
-//        std::cout <<  pair.second << std::endl;
-//        sentence_binary.push_back(pair.second);
-//    }
-
     for (int i=0; i<sentence_numbers.size(); i++)
     {
         addBinary(random_binary[i], sentence_binary[i]);
     }
-
-//    for (int i=0; i< random_numbers.size(); i++)
-//    {
-//        addBinary(random_numbers.find(i), sentence_numbers.find(i));
-//    }
-
-  //  std::cout << "\n  random_numbers[3].at(2): " << random_numbers[3.second] << "\n  sentence_numbers[3].at(2): " << sentence_numbers[3];
-
-
-//    for (int ite = 0; ite < file_content.length(); ite++)
-//    {
-//        addBinary(random_numbers[ite].at(2), sentence_numbers[ite].at(2));
-//    }
-
-
-//    for (int i=0; i<file_content.length(); i++)
-//    {
-//        int value1 = std::bitset<8>(i).to_ulong();
-//        //int value2 = std::bitset<8>(sentence_numbers.at(pair.first)).to_ulong();
-//        int sum = random_numbers.at(2) + sentence_numbers.at(2);
-//        result[i] = std::bitset<8>(sum).to_string();
-//    }
 
     std::string encrypted_sentence;
     for (const auto & i : sum_result)
@@ -163,22 +126,5 @@ int main()
 
     final_encrypted_sentence << encrypted_sentence;
 
-    ///     1. Najpierw trzeba odczytać plik skompresowany
-    ///     2. Trzeba zmierzyć długość pliku skompresowanego i na podstawie tej liczby wygenereować taką samą liczbę losowych liczb,
-    ///         tak żeby każdemu znakowi z inputu opdowiadała losowo wygenerowana liczba
-
-    ///     KLUCZEM DO SZYFROWANIA TZW PAD BĘDZIE: CIĄG WYGENEROWANYCH LOSOWO LICZB ZAMIENIONYCH NA POSZCZEGÓLNE ZNAKI ASCII
-
-    ///     3. Zmieniamy każdy znak ze zdania z inputu na liczbę w ASCII
-    ///     4. Dodajemy binarnie liczbę randomową do liczby odpowiadającej ze znaku ASCII i na tej podstawie generuje się trzecia - zaszyfrowana
-    ///     5. Konwertujemy powstałą trzecią liczbę na znak ASCII
-    ///     6. Składamy wszystkie znaki w całość i otrzymujemy zaszyfrowane zdanie
-
-
-    /// znak w zdaniu  ----> liczba w ASCII ----> liczba binarna
-    // -----STRING----       ---------------MAPA----------------
-
-    /// liczba binarna <---- random liczba  ----> znak w ASCII ----> KLUCZ
-    //  --------------MAPA----------------                        --STRING--
 
 }
