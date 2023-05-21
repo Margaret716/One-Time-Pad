@@ -10,9 +10,10 @@ The main advantage of OTP encryption is that it is theoretically unbreakable, pr
 
 Let's assume we have a message to encrypt: "HELLO" and a randomly generated key of the same length: "QIVRS".
 
-Convert each letter of the message to its ASCII numbers (e.g., A=65, B=66, C=67, ...). In our case, "HELLO" converts to "72-69-76-76-79" and "QIVRS" to "81-73-86-82-83". Now we have to convert each numbers to binary system.
+Convert each letter of the message to its ASCII numbers (e.g., A=65, B=66, C=67, ...). In our case, "HELLO" converts to "72-69-76-76-79" and "QIVRS" to "81-73-86-82-83". Now convert each numbers to the binary system.
 
 HELLO  ->  72-69-76-76-79  ->  1001000-1000101-1001100-1001100-1001111
+<br />
 QIVRS  ->  81-73-86-82-83  ->  1010001-1001001-1010110-1010010-1010011
 
 Perform the XOR operation between each number of the message and its corresponding number in the key. For example:
