@@ -23,7 +23,7 @@ void convert_to_binary()
         std::string binary= std::bitset<8>(i).to_string();
         random_numbers[i] = binary.substr();
 
-        std::cout<< "key_number[i]: " << i <<" binary: " << binary << std::endl;
+       // std::cout<< "key_number[i]: " << i <<" binary: " << binary << std::endl;
         random_binary.push_back(binary);
     }
 
@@ -32,7 +32,7 @@ void convert_to_binary()
         std::string binary= std::bitset<8>(int(i)).to_string();
         sentence_numbers[int(i)] = binary.substr();
 
-        std::cout<< "sentence_numbers[i]: " << int(i) <<" binary: " << binary << std::endl;
+       // std::cout<< "sentence_numbers[i]: " << int(i) <<" binary: " << binary << std::endl;
         sentence_binary.push_back(binary);
     }
 
@@ -50,7 +50,7 @@ void addBinary(std::string a, std::string b){
         else
             ans += "1";
     }
-    std::cout <<"String a + b : " << a << " + " << b << " = " << ans << "<----------- \n";
+    //std::cout <<"String a + b : " << a << " + " << b << " = " << ans << "<----------- \n";
     sum_result.push_back(ans);
 }
 
@@ -116,8 +116,8 @@ int main()
         encrypted_sentence += char(bits.to_ulong());
     }
 
-    std::cout << "Encrypted sentence: " <<  encrypted_sentence << " Length: " << encrypted_sentence.length() << std::endl;
-    std::cout << "File content: " <<  file_content << " Length: " << file_content.length() << std::endl;
+    std::cout << "Encrypted sentence: " <<  encrypted_sentence << std::endl; // " Length: " << encrypted_sentence.length() << std::endl;
+    //std::cout << "File content: " <<  file_content << " Length: " << file_content.length() << std::endl;
 
     std::fstream final_encrypted_sentence;
     final_encrypted_sentence.open("C:/Users/mlewa/CLionProjects/One-Time_Pad/output.txt", std::ios::out| std::ios::app);
