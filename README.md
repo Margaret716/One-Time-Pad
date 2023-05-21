@@ -8,6 +8,8 @@ It is important for the key to be truly random and for secure key storage to be 
 
 The main advantage of OTP encryption is that it is theoretically unbreakable, provided that the key is truly random, never reused, and securely stored. However, OTP has practical limitations, such as the need for prior key agreement between the sender and recipient, as well as the requirement for secure key exchange.
 
+## Example of OTP Encryption
+
 Let's assume we have a message to encrypt: "HELLO" and a randomly generated key of the same length: "QIVRS".
 
 Convert each letter of the message to its ASCII numbers (e.g., A=65, B=66, C=67, ...). In our case, "HELLO" converts to "72-69-76-76-79" and "QIVRS" to "81-73-86-82-83". Now convert each numbers to the binary system.
