@@ -42,11 +42,9 @@ void addBinary(std::string a, std::string b){
     std::string ans;
     int  n=8;
 
-    // Loop to iterate over the
-    // Binary Strings
+
     for (int i = 0; i < n; i++)
     {
-        // If the Character matches
         if (a[i] == b[i])
             ans += "0";
         else
